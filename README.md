@@ -147,4 +147,114 @@ Este documento abrange conceitos fundamentais de Redes de Computadores II, com f
 
 # Guia de Estudo para Redes de Computadores II
 
-Este guia de estudo foi elaborado com base na lista de exercícios fornecida pelo Prof. Dr. Tiago B. N. Silveira para a disciplina de Redes de Computadores II, 2024.1, do curso de Ciência da Computação. O objetivo
+Este guia de estudo foi elaborado com base na lista de exercícios fornecida pelo Prof. Dr. Tiago B. N. Silveira para a disciplina de Redes de Computadores II, 2024.1, do curso de Ciência da Computação. O objetivo é ajudar a compreender os principais conceitos abordados na matéria, focando nas questões da lista de exercícios.
+
+<details>
+  <summary>Unidade 1: Camada de Enlace (VLANs e MPLS)</summary>
+
+  ### 1. Conexão de switches com VLANs
+  **Questão**: Quantas portas serão necessárias para conectar N switches que suportam K grupos de VLAN?
+
+  **Conceito**: VLAN (Virtual Local Area Network)
+  - **VLANs** permitem a segmentação lógica de uma rede física em diferentes domínios de broadcast. Isso significa que você pode separar o tráfego de rede de diferentes departamentos ou grupos dentro de uma empresa, mesmo que todos estejam usando o mesmo hardware de rede.
+  - **Protocolo de entroncamento (trunking)**: É utilizado para transportar tráfego de múltiplas VLANs através de uma única conexão entre switches. O protocolo mais comum é o IEEE 802.1Q.
+
+  **Resolução**:
+  - Se tivermos N switches, e cada um deve se comunicar com os outros, geralmente cada switch precisa de uma porta de entroncamento para cada conexão com outro switch. Assim, cada switch precisaria de \((N-1)\) portas.
+  - Exemplo: Para 4 switches (N = 4), cada switch precisará de 3 portas para se conectar aos outros três switches.
+
+  ### 2. VLANs em empresas
+  **Questão**: Como uma VLAN pode poupar tempo e dinheiro para uma empresa?
+
+  **Conceito**: 
+  - **Segmentação lógica**: Reduz a necessidade de reconfiguração física da rede ao mudar departamentos ou grupos de trabalho, economizando tempo de administração.
+  - **Eficiência de rede**: Melhora a utilização da largura de banda ao limitar os domínios de broadcast.
+  - **Custo**: Reduz a necessidade de hardware adicional, como switches separados para cada departamento.
+
+  ### 3. Segurança das VLANs
+  **Questão**: Como uma VLAN fornece segurança adicional para uma rede?
+
+  **Conceito**: 
+  - **Isolamento**: Cada VLAN é um domínio de broadcast separado. Dispositivos em VLANs diferentes não podem se comunicar diretamente a menos que seja permitido pelo roteamento entre VLANs.
+  - **Controle de acesso**: Políticas de segurança podem ser aplicadas a VLANs específicas, restringindo acesso a recursos sensíveis.
+
+  ### 4. Engenharia de tráfego em MPLS
+  **Questão**: Como configurar tabelas MPLS para direcionar tráfego específico através de rotas diferentes?
+
+  **Conceito**: MPLS (Multiprotocol Label Switching)
+  - MPLS é uma técnica usada para encaminhamento eficiente de pacotes em uma rede através da adição de labels aos pacotes.
+  - **Tabela de comutação de labels (LSR - Label Switching Router)**: Define as ações a serem tomadas com base nos labels.
+
+  **Resolução**:
+  - Suponha que queremos que pacotes de R6 para A sejam encaminhados via R6-R4-R3-R1 e pacotes de R5 para A via R5-R4-R2-R1. Configuramos as tabelas MPLS nos roteadores R5, R6 e R4 para refletir essas rotas.
+
+  ### 5. Etapas de protocolo para acessar uma página web
+  **Questão**: Quais são as etapas de protocolo desde ligar o computador até receber uma página web?
+
+  **Conceito**:
+  - **Ethernet**: Estabelece a conexão física.
+  - **DHCP (Dynamic Host Configuration Protocol)**: Obtém um endereço IP.
+  - **ARP (Address Resolution Protocol)**: Obtém o endereço MAC do roteador.
+  - **DNS (Domain Name System)**: Resolve o nome de domínio em um endereço IP.
+  - **TCP (Transmission Control Protocol)**: Estabelece uma conexão confiável.
+  - **HTTP (HyperText Transfer Protocol)**: Faz a solicitação e recebe a página web.
+
+  **Resolução**:
+  1. **Ethernet**: Conecta o computador à rede local.
+  2. **DHCP**: O computador solicita um endereço IP de um servidor DHCP.
+  3. **ARP**: O computador usa ARP para descobrir o endereço MAC do roteador.
+  4. **DNS**: O computador envia uma solicitação DNS para resolver o nome de domínio do site para um endereço IP.
+  5. **TCP**: Estabelece uma conexão TCP com o servidor web.
+  6. **HTTP**: Envia uma solicitação HTTP para obter a página web.
+
+</details>
+
+<details>
+  <summary>Unidade 2: Camada Física</summary>
+
+  ### 6. Período e frequência de um sinal
+  **Questão**: Qual é a relação entre período e frequência de um sinal?
+
+  **Conceito**:
+  - **Período (T)**: Tempo que um ciclo completo de um sinal leva para ocorrer.
+  - **Frequência (f)**: Número de ciclos completos que ocorrem em um segundo.
+  - **Relação**: \( f = \frac{1}{T} \).
+
+  ### 7. Medidas de amplitude, frequência e fase
+  **Questão**: O que mede a amplitude, a frequência e a fase de um sinal?
+
+  **Conceito**:
+  - **Amplitude**: Valor máximo do sinal (em volts).
+  - **Frequência**: Número de ciclos por segundo (em hertz, Hz).
+  - **Fase**: Deslocamento do início do ciclo (em graus).
+
+  ### 8. Decomposição de sinal composto
+  **Questão**: Como um sinal composto pode ser decomposto em suas componentes de frequências individuais?
+
+  **Conceito**:
+  - **Transformada de Fourier**: Decompõe um sinal em suas frequências componentes.
+
+  ### 9. Tipos de perda na transmissão de sinais
+  **Questão**: Cite os três tipos de perda na transmissão de sinais.
+
+  **Conceito**:
+  - **Atenuação**: Perda de intensidade do sinal ao longo da distância.
+  - **Distorção**: Alteração da forma do sinal.
+  - **Ruído**: Interferências que afetam a qualidade do sinal.
+
+  ### 10. Transmissão banda-base vs. banda-larga
+  **Questão**: Qual é a diferença entre transmissão banda-base e transmissão banda-larga?
+
+  **Conceito**:
+  - **Banda-base**: Utiliza toda a largura de banda do meio para um único sinal.
+  - **Banda-larga**: Divide a largura de banda em múltiplos canais para transmitir múltiplos sinais simultaneamente.
+
+</details>
+
+## Conclusão
+
+Este guia aborda os conceitos fundamentais de VLANs, MPLS e a camada física, conforme requerido na lista de exercícios. Ao entender esses conceitos, você estará bem preparado para a prova, que consiste em 80% de questões de múltipla escolha e 20% de questões descritivas.
+
+Para dúvidas ou mais informações, consulte o material recomendado pelo professor e pratique os exercícios.
+
+Boa sorte nos estudos!
