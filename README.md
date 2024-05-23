@@ -294,9 +294,7 @@ Modems: Modems de linha telefônica e modems de cabo usam QAM para transmitir da
 Wi-Fi: Padrões Wi-Fi como 802.11n e 802.11ac utilizam QAM para aumentar a taxa de dados.
 Conclusão:
 QAM é uma técnica avançada de modulação que aumenta significativamente a eficiência da transmissão de dados variando tanto a amplitude quanto a fase da onda portadora. Embora seja mais complexa e sensível a ruído, a sua capacidade de transmitir grandes volumes de dados a altas taxas faz dela uma escolha popular em diversas tecnologias de comunicação modernas.
-## Conclusão
-
-Este guia aborda os conceitos fundamentais de VLANs, MPLS e a camada física, conforme requerido na lista de exercícios. Ao entender esses conceitos, você estará bem preparado para a prova, que consiste em 80% de questões de múltipla escolha e 20% de questões descritivas.
+</details>
 
 Para dúvidas ou mais informações, consulte o material recomendado pelo professor e pratique os exercícios.
 
