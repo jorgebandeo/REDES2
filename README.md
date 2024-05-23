@@ -1,6 +1,4 @@
-Aqui está o texto formatado com abas recolhíveis em Markdown para seu repositório Git:
 
-```markdown
 # Conteúdo de Estudo para Redes de Computadores II
 
 Este documento abrange conceitos fundamentais de Redes de Computadores II, com foco nas aulas sobre a Camada Física. A seguir, uma explicação detalhada dos principais tópicos abordados.
