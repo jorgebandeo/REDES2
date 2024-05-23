@@ -251,6 +251,49 @@ Este guia de estudo foi elaborado com base na lista de exercícios fornecida pel
 
 </details>
 
+<details>
+  <summary>Quadrature Amplitude Modulation (QAM)</summary>
+
+Definição: QAM é uma técnica de modulação usada para transmitir dados através de uma onda portadora variando tanto a amplitude quanto a fase da onda. Isso permite que mais informações sejam transmitidas em um mesmo período de tempo, aumentando a eficiência do uso da largura de banda.
+
+Conceitos Fundamentais:
+Modulação: É o processo de alterar uma característica de uma onda portadora (amplitude, frequência ou fase) para transmitir dados.
+QAM: Combina modulação em amplitude (AM) e modulação em fase (PM) para transmitir dados.
+Funcionamento do QAM:
+QAM transmite dados através da combinação de duas ondas portadoras que estão 90 graus fora de fase entre si, conhecidas como componentes in-phase (I) e quadrature (Q). Cada ponto no diagrama de constelação de QAM representa uma combinação única de amplitude e fase das duas componentes.
+
+Diagrama de Constelação:
+O diagrama de constelação de QAM é uma representação gráfica dos possíveis estados de sinal.
+Cada ponto no diagrama representa um símbolo, que corresponde a um determinado valor de amplitude e fase.
+Por exemplo, no QAM-16, há 16 pontos no diagrama de constelação, permitindo a transmissão de 4 bits por símbolo (2^4 = 16).
+Exemplos de QAM:
+QAM-4 (ou 4-QAM):
+
+Também conhecido como QPSK (Quadrature Phase Shift Keying).
+4 pontos na constelação, representando 2 bits por símbolo.
+QAM-16:
+
+16 pontos na constelação, representando 4 bits por símbolo.
+A constelação tem uma forma quadrada, com cada ponto a uma distância uniforme dos outros.
+QAM-64:
+
+64 pontos na constelação, representando 6 bits por símbolo.
+Usado em sistemas que requerem alta taxa de dados, como TV digital e modems de alta velocidade.
+Vantagens e Desvantagens:
+Vantagens:
+
+Alta Eficiência Espectral: QAM pode transmitir mais bits por símbolo, aumentando a taxa de dados dentro de uma largura de banda fixa.
+Flexibilidade: Vários níveis de QAM podem ser usados para balancear entre taxa de dados e robustez contra ruído.
+Desvantagens:
+
+Sensibilidade ao Ruído: Altos níveis de QAM (como QAM-256) são mais suscetíveis a ruído e interferências, requerendo um sinal mais limpo e maior relação sinal-ruído (SNR).
+Complexidade: A demodulação de sinais QAM requer algoritmos mais complexos, aumentando o custo e a complexidade dos receptores.
+Aplicações de QAM:
+Televisão Digital: QAM é usado na transmissão de sinais de TV digital por cabo.
+Modems: Modems de linha telefônica e modems de cabo usam QAM para transmitir dados em alta velocidade.
+Wi-Fi: Padrões Wi-Fi como 802.11n e 802.11ac utilizam QAM para aumentar a taxa de dados.
+Conclusão:
+QAM é uma técnica avançada de modulação que aumenta significativamente a eficiência da transmissão de dados variando tanto a amplitude quanto a fase da onda portadora. Embora seja mais complexa e sensível a ruído, a sua capacidade de transmitir grandes volumes de dados a altas taxas faz dela uma escolha popular em diversas tecnologias de comunicação modernas.
 ## Conclusão
 
 Este guia aborda os conceitos fundamentais de VLANs, MPLS e a camada física, conforme requerido na lista de exercícios. Ao entender esses conceitos, você estará bem preparado para a prova, que consiste em 80% de questões de múltipla escolha e 20% de questões descritivas.
